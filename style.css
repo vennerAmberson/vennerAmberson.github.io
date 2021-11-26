@@ -66,7 +66,7 @@ html, body {
 
 .white.playing {
   transform: translate(0, 0);
-  background-color: #000;
+  background-color: #585858;
 }
 
 .black.playing {
