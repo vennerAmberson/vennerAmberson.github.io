@@ -1,128 +1,363 @@
 @charset "UTF-8";
 * {
-  vertical-align: top;
-  backface-visibility: hidden;
+  font-family: 微軟正黑體;
+  cursor: url(https://cur.cursors-4u.net/nature/nat-11/nat1027.ani), url(http://cur.cursors-4u.net/nature/nat-11/nat1027.gif), auto;
 }
 
-html, body {
-  font-family: 微軟正黑體;
-  padding: 0;
-  margin: 0;
-  width: 100%;
+body {
+  height: 2000px;
+}
+
+nav.navbar.fixed-top.navbar-expand-lg.navbar-light {
+  transition-duration: 0.5s;
+  height: 50px;
+}
+nav.navbar.fixed-top.navbar-expand-lg.navbar-light a.nav-link {
+  color: #000;
+}
+nav.navbar.fixed-top.navbar-expand-lg.navbar-light a.nav-link:hover {
+  color: blue;
+}
+
+header.jumbotron, footer.jumbotron {
+  padding-top: 0px;
+  text-align: center;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  background-color: #fff;
+}
+header.jumbotron .container, footer.jumbotron .container {
+  position: relative;
+  padding: 200px;
+  background-image: url(https://webstockreview.net/images/stitch-clipart-cartoon-3.jpg);
+  background-size: 80% 75%;
+  background-attachment: fixed;
+  background-position: 60% 0%;
+}
+header.jumbotron .container h4, footer.jumbotron .container h4 {
+  color: rgba(255, 255, 255, 0.5);
+}
+header.jumbotron .container hr, footer.jumbotron .container hr {
+  max-width: 100px;
+  border-color: #eee;
+  border-width: 5px;
+}
+header.jumbotron .container #my_video, footer.jumbotron .container #my_video {
   height: 100%;
 }
 
-.center_box {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+section {
+  padding: 50px 0px;
+}
+
+section#ethnicity {
+  background-color: #417dc7;
+  padding-top: 0px;
+}
+section#ethnicity .container {
+  padding: 50px;
   text-align: center;
-  width: 100%;
+}
+section#ethnicity .container .col-md-5.img {
+  background-image: url(https://webstockreview.net/images250_/stitch-clipart-cartoon-2.png);
+  background-size: cover;
+  height: 260px;
+  mix-blend-mode: multiply;
+  filter: saturate(4) contrast(1.2) brightness(1.5);
+}
+section#ethnicity .container .col-md-7 {
+  padding-top: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
-.pianokey {
-  display: inline-block;
-  position: relative;
-  vertical-align: top;
+section#basicInfo {
+  background-color: #cbdbf0;
+}
+section#basicInfo h3 {
+  text-align: center;
 }
 
-.keyboard {
-  box-shadow: 0px 0px 40px -5px rgba(0, 0, 0, 0.4);
-  display: inline-block;
-  margin-bottom: 30px;
-  cursor: pointer;
-}
-
-.white {
-  width: 44px;
-  height: 300px;
-  border: 1px solid #d5d5d5;
-  cursor: pointer;
-  transform: translate(-3px, -3px);
-  transition: 0.1s;
-}
-.white:hover {
-  transform: translate(0, 0);
-  background-color: #eee;
-}
-
-.black {
-  width: 22px;
-  height: 150px;
-  background-color: #585858;
-  margin-left: -11px;
-  margin-right: -11px;
-  position: absolute;
-  z-index: 22;
-  cursor: pointer;
-  transition: 0.1s;
-  transform: translate(-3px, -3px);
-}
-.black:hover {
-  transform: translate(0, 0);
-  background-color: #4b4b4b;
-}
-
-.white.playing {
-  transform: translate(0, 0);
-  background-color: #585858;
-}
-
-.black.playing {
-  transform: translate(0, 0);
-  background-color: #4b4b4b;
-}
-
-label {
-  position: absolute;
-  color: rgba(88, 88, 88, 0.5);
-  bottom: -25px;
-  left: 50%;
-  transform: translate(-50%, 0%);
-  font-size: 8px;
-}
-
-li {
-  display: inline-block;
-  padding: 0px 5px;
-  cursor: pointer;
-  font-size: 15px;
-  opacity: 80%;
-  transition: 0.1s;
-}
-li:hover {
-  background-color: #d5d5d5;
-}
-li.playing {
-  background-color: #d5d5d5;
-}
-li .num {
-  border-bottom: 1px solid #000;
-}
-li .time {
-  opacity: 60%;
-  font-size: 10px;
-}
-
-button {
-  background-color: transparent;
-  border: none;
-  border: 1px solid;
-  font-size: 20px;
-  margin-top: 5px;
-  padding: 4px 12px;
-  border-radius: 4px;
-  transition: 0.1s 0.2s;
-  cursor: pointer;
-}
-button:hover {
-  background-color: #727272;
+section#ability {
+  background-color: #417dc7;
+  text-align: center;
   color: #eee;
 }
-button i {
-  padding-left: 5px;
+section#ability h2 {
+  font-weight: bold;
 }
-button i.fas.fa-record-vinyl {
-  color: #cc0000;
+section#ability p {
+  color: rgba(255, 255, 255, 0.5);
+}
+section#ability img {
+  width: 100%;
+}
+section#ability .imgattr {
+  height: 200px;
+  margin: 20px;
+  overflow: hidden;
+}
+section#ability img.agility {
+  width: 200%;
+  transform: translate(-50%, 0%);
+}
+section#ability img.dex {
+  transform: translate(0%, -5%);
+}
+section#ability img.strength {
+  width: 200%;
+  transform: translate(-50%, -5%);
+}
+section#ability img.vitality {
+  width: 300%;
+  transform: translate(-33%, -10%);
+}
+section#ability img.sage {
+  width: 125%;
+  height: 245%;
+  transform: translate(-10%, -17%);
+}
+section#ability img.magic {
+  width: 200%;
+  transform: translate(-40%, -15%);
+}
+
+section#background {
+  background-color: #cbdbf0;
+  text-align: center;
+}
+section#background .col-md-4.img {
+  background-image: url(https://png.pngtree.com/png-clipart/20200224/original/pngtree-continuous-line-drawing-of-happy-pregnant-woman-silhouette-picture-of-mother-png-image_5231087.jpg);
+  background-size: 100% 100%;
+  mix-blend-mode: multiply;
+  height: 400px;
+}
+section#background .col-md-4.img .cross {
+  -webkit-text-stroke: 2px red;
+  -webkit-text-fill-color: transparent;
+  position: absolute;
+  right: 30%;
+  top: 50%;
+  font-size: 100px;
+}
+section#background .col-md-8 .row .col-md-4 i {
+  font-size: 50px;
+}
+section#background .col-md-8 .col-md-12 {
+  text-align: left;
+  padding-top: 10px;
+}
+
+section#skill {
+  background-color: #417dc7;
+  color: #eee;
+}
+section#skill .row .col-md-6.Magitech {
+  background-image: url(https://i-ogp.pximg.net/c/w1200_q80_a2_g1_u1_cr0:0:1:0.362/img-master/img/2014/09/18/00/36/22/46041347_p0_master1200.jpg);
+  background-size: 120% 100%;
+  height: 300px;
+  background-position: -50px;
+  overflow: hidden;
+  transform: translate(0%, 15%);
+}
+section#skill .row .col-md-6.shooter {
+  background-image: url(https://vovo2000.com/images/53826.jpg);
+  background-size: 100% 150%;
+  height: 300px;
+  background-position: 0px -10px;
+  transform: translate(0%, 15%);
+}
+section#skill .row .col-md-6.ranger {
+  background-image: url(https://pbs.twimg.com/media/D9bf6c9VUAAPMzP.jpg);
+  background-size: 100% 100%;
+  background-position: -10px 0px;
+  height: 500px;
+  mix-blend-mode: multiply;
+}
+section#skill .row .col-md-6.enhancer {
+  background-image: url(https://img.komicolle.org/2015-02/14232084649029.jpg);
+  background-size: 120% 100%;
+  background-position: -50px 0px;
+  height: 300px;
+}
+section#skill .row h2#enhancer {
+  padding-bottom: 55px;
+}
+
+section#language {
+  background-color: #cbdbf0;
+}
+section#language .row {
+  text-align: center;
+}
+
+section#weapon {
+  background-color: #cbdbf0;
+  color: #000;
+}
+section#weapon .row .weapenimg {
+  width: 33%;
+  background-size: 110% 100%;
+  background-position: center center;
+  height: 300px;
+}
+section#weapon .row .blank {
+  width: 33.5%;
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTnK-uT3n4G9_QpCBFyNl0qTp6sbT7nFPMomA&usqp=CAU);
+}
+section#weapon .row .bow {
+  background-image: url(https://cdn.kiranico.net/file/mhworld-kiranico/images/wp/factory/bow/ZehgguyN.jpg);
+  background-size: 180% 100%;
+}
+section#weapon .row .gun {
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ1j0zudy75AHThjBQjaUtyNu57HhV_BUiR1A&usqp=CAU);
+  background-size: 100% 70%;
+}
+section#weapon .row .col-md-12 {
+  padding: 0px;
+}
+section#weapon .row .col-md-12 table {
+  color: #eee;
+  padding: 0px;
+  margin-right: auto;
+  margin-left: auto;
+}
+section#weapon .row .col-md-12 table th, section#weapon .row .col-md-12 table td {
+  width: 33%;
+  text-align: center;
+}
+
+section#armor {
+  background-color: #417dc7;
+  color: #eee;
+}
+section#armor .col-md-3 {
+  overflow: hidden;
+  height: 220px;
+  margin-top: 5%;
+}
+section#armor .col-md-3 img {
+  left: 35%;
+  top: -15%;
+  position: relative;
+  transform: translate(-40%, -15%);
+}
+section#armor .col-md-9 .garden, section#armor .col-md-9 .soft {
+  font-size: 30px;
+}
+section#armor .col-md-9 p {
+  margin-left: 15px;
+}
+
+section#accessories {
+  background-color: #cbdbf0;
+}
+section#accessories hr.title {
+  border-width: 5px;
+}
+section#accessories .col-md-3 {
+  height: 200px;
+}
+section#accessories .col-md-9 {
+  padding-top: 5%;
+}
+section#accessories .col-md-3.magisphere {
+  background-image: url(https://www.fundesigncn.com/wp-content/uploads/2019/02/10-naolito.jpg);
+  background-size: cover;
+  background-position: 0px -30px;
+}
+section#accessories .col-md-3.headkerchief {
+  background-image: url(https://i.pinimg.com/originals/8d/e0/2f/8de02fbd3388f26aa4a3d8a5209c4a0c.jpg);
+  background-size: 203%;
+  background-position: 95% 0px;
+}
+section#accessories .col-md-3.gunbelt {
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNM0QWXVGsTRlxXvPzxhZDuqxq2RWdstHbig&usqp=CAU);
+  background-size: 200%;
+  background-position: 45% 45%;
+}
+section#accessories .col-md-3.magazine {
+  background-image: url(https://e7.pngegg.com/pngimages/929/7/png-clipart-anime-light-novel-aria-the-scarlet-ammo-mf-bunko-j-mangaka-anime-computer-computer-wallpaper-thumbnail.png);
+  background-size: 400%;
+  mix-blend-mode: multiply;
+  background-position: 30% 70%;
+}
+section#accessories .col-md-3.quiver {
+  background-image: url(https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KW1Zwwo4NUX4oFJZEHLbXK9QlSPcU_oAlcQk2fVPCsxcPaVFVgGhVCv6ygOUhzx_LafTRF5MiJhZWCgfLmDLfQhGxUppYoi-3A8d_z2gS3-UBoN2DwdoLHcFQ6aViD8lTvyLvsg8fpup_NzXJ9-n51Rp-OErc);
+  background-size: 100% 100%;
+}
+
+section#point {
+  background-color: #417dc7;
+  color: #eee;
+}
+section#point .row {
+  text-align: center;
+}
+section#point .row .col-md-2 {
+  padding-top: 20px;
+}
+section#point .row .col-md-2.life {
+  font-size: 25px;
+}
+section#point .row .col-md-2.life .col-12 {
+  padding: 6px;
+}
+
+section#item {
+  background-color: #cbdbf0;
+}
+section#item h3 {
+  font-weight: bold;
+}
+section#item p {
+  border-bottom: 5px solid #417dc7;
+}
+section#item .imgbox {
+  padding-top: 10px;
+  overflow: hidden;
+}
+section#item .imgbox img {
+  height: 200px;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+footer.jumbotron {
+  background-color: white;
+}
+footer.jumbotron .background {
+  height: 1000px;
+  position: relative;
+}
+footer.jumbotron .background input {
+  width: 50%;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  font-size: 30px;
+  transform: translate(-50%, -60%);
+  background-color: rgba(255, 255, 255, 0.8);
+  mix-blend-mode: screen;
+  z-index: 10;
+}
+footer.jumbotron .background h1 {
+  top: 20%;
+  background-color: rgba(0, 0, 255, 0);
+  font-weight: 900;
+  position: relative;
+  mix-blend-mode: screen;
+  z-index: 10;
+}
+footer.jumbotron .background iframe {
+  position: absolute;
+  top: 0px;
+  left: -10%;
+  width: 120%;
+  height: 100%;
+  border: 0px;
+  mix-blend-mode: luminosity;
 }
