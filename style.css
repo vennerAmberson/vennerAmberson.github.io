@@ -36,6 +36,7 @@ header.jumbotron .container, footer.jumbotron .container {
 }
 header.jumbotron .container h4, footer.jumbotron .container h4 {
   color: rgba(255, 255, 255, 0.5);
+  max-width: 80%;
 }
 header.jumbotron .container hr, footer.jumbotron .container hr {
   max-width: 100px;
