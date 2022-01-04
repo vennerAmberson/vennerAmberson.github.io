@@ -9,7 +9,8 @@ body {
 }
 
 nav.navbar.fixed-top.navbar-expand-lg.navbar-light {
-  transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
   height: 50px;
 }
 nav.navbar.fixed-top.navbar-expand-lg.navbar-light a.nav-link {
@@ -36,7 +37,6 @@ header.jumbotron .container, footer.jumbotron .container {
 }
 header.jumbotron .container h4, footer.jumbotron .container h4 {
   color: rgba(255, 255, 255, 0.5);
-  max-width: 80%;
 }
 header.jumbotron .container hr, footer.jumbotron .container hr {
   max-width: 100px;
@@ -64,14 +64,22 @@ section#ethnicity .container .col-md-5.img {
   background-size: cover;
   height: 260px;
   mix-blend-mode: multiply;
-  filter: saturate(4) contrast(1.2) brightness(1.5);
+  -webkit-filter: saturate(4) contrast(1.2) brightness(1.5);
+          filter: saturate(4) contrast(1.2) brightness(1.5);
 }
 section#ethnicity .container .col-md-7 {
   padding-top: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 section#basicInfo {
@@ -102,27 +110,33 @@ section#ability .imgattr {
 }
 section#ability img.agility {
   width: 200%;
-  transform: translate(-50%, 0%);
+  -webkit-transform: translate(-50%, 0%);
+          transform: translate(-50%, 0%);
 }
 section#ability img.dex {
-  transform: translate(0%, -5%);
+  -webkit-transform: translate(0%, -5%);
+          transform: translate(0%, -5%);
 }
 section#ability img.strength {
   width: 200%;
-  transform: translate(-50%, -5%);
+  -webkit-transform: translate(-50%, -5%);
+          transform: translate(-50%, -5%);
 }
 section#ability img.vitality {
   width: 300%;
-  transform: translate(-33%, -10%);
+  -webkit-transform: translate(-33%, -10%);
+          transform: translate(-33%, -10%);
 }
 section#ability img.sage {
   width: 125%;
   height: 245%;
-  transform: translate(-10%, -17%);
+  -webkit-transform: translate(-10%, -17%);
+          transform: translate(-10%, -17%);
 }
 section#ability img.magic {
   width: 200%;
-  transform: translate(-40%, -15%);
+  -webkit-transform: translate(-40%, -15%);
+          transform: translate(-40%, -15%);
 }
 
 section#background {
@@ -161,14 +175,16 @@ section#skill .row .col-md-6.Magitech {
   height: 300px;
   background-position: -50px;
   overflow: hidden;
-  transform: translate(0%, 15%);
+  -webkit-transform: translate(0%, 15%);
+          transform: translate(0%, 15%);
 }
 section#skill .row .col-md-6.shooter {
   background-image: url(https://vovo2000.com/images/53826.jpg);
   background-size: 100% 150%;
   height: 300px;
   background-position: 0px -10px;
-  transform: translate(0%, 15%);
+  -webkit-transform: translate(0%, 15%);
+          transform: translate(0%, 15%);
 }
 section#skill .row .col-md-6.ranger {
   background-image: url(https://pbs.twimg.com/media/D9bf6c9VUAAPMzP.jpg);
@@ -243,7 +259,8 @@ section#armor .col-md-3 img {
   left: 35%;
   top: -15%;
   position: relative;
-  transform: translate(-40%, -15%);
+  -webkit-transform: translate(-40%, -15%);
+          transform: translate(-40%, -15%);
 }
 section#armor .col-md-9 .garden, section#armor .col-md-9 .soft {
   font-size: 30px;
@@ -324,7 +341,8 @@ section#item .imgbox img {
   height: 200px;
   position: relative;
   left: 50%;
-  transform: translate(-50%);
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
 }
 
 footer.jumbotron {
@@ -340,7 +358,8 @@ footer.jumbotron .background input {
   left: 50%;
   top: 50%;
   font-size: 30px;
-  transform: translate(-50%, -60%);
+  -webkit-transform: translate(-50%, -60%);
+          transform: translate(-50%, -60%);
   background-color: rgba(255, 255, 255, 0.8);
   mix-blend-mode: screen;
   z-index: 10;
