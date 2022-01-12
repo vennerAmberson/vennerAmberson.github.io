@@ -1,7 +1,7 @@
 @charset "UTF-8";
 * {
   font-family: 微軟正黑體;
-  cursor: url(https://cur.cursors-4u.net/nature/nat-11/nat1027.ani), url(http://cur.cursors-4u.net/nature/nat-11/nat1027.gif), auto;
+  cursor: url(https://ani.cursors-4u.net/symbols/sym-9/sym824.ani), url(https://ani.cursors-4u.net/symbols/sym-9/sym824.png), auto;
 }
 
 body {
@@ -9,8 +9,7 @@ body {
 }
 
 nav.navbar.fixed-top.navbar-expand-lg.navbar-light {
-  -webkit-transition-duration: 0.5s;
-          transition-duration: 0.5s;
+  transition-duration: 0.5s;
   height: 50px;
 }
 nav.navbar.fixed-top.navbar-expand-lg.navbar-light a.nav-link {
@@ -30,9 +29,8 @@ header.jumbotron, footer.jumbotron {
 header.jumbotron .container, footer.jumbotron .container {
   position: relative;
   padding: 200px;
-  background-image: url(https://webstockreview.net/images/stitch-clipart-cartoon-3.jpg);
-  background-size: 80% 75%;
-  background-attachment: fixed;
+  background-image: url(https://i.imgur.com/2qYoGvn.png);
+  background-size: cover;
   background-position: 60% 0%;
 }
 header.jumbotron .container h4, footer.jumbotron .container h4 {
@@ -64,22 +62,14 @@ section#ethnicity .container .col-md-5.img {
   background-size: cover;
   height: 260px;
   mix-blend-mode: multiply;
-  -webkit-filter: saturate(4) contrast(1.2) brightness(1.5);
-          filter: saturate(4) contrast(1.2) brightness(1.5);
+  filter: saturate(4) contrast(1.2) brightness(1.5);
 }
 section#ethnicity .container .col-md-7 {
   padding-top: 5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 section#basicInfo {
@@ -110,33 +100,27 @@ section#ability .imgattr {
 }
 section#ability img.agility {
   width: 200%;
-  -webkit-transform: translate(-50%, 0%);
-          transform: translate(-50%, 0%);
+  transform: translate(-50%, 0%);
 }
 section#ability img.dex {
-  -webkit-transform: translate(0%, -5%);
-          transform: translate(0%, -5%);
+  transform: translate(0%, -5%);
 }
 section#ability img.strength {
   width: 200%;
-  -webkit-transform: translate(-50%, -5%);
-          transform: translate(-50%, -5%);
+  transform: translate(-50%, -5%);
 }
 section#ability img.vitality {
   width: 300%;
-  -webkit-transform: translate(-33%, -10%);
-          transform: translate(-33%, -10%);
+  transform: translate(-33%, -10%);
 }
 section#ability img.sage {
   width: 125%;
   height: 245%;
-  -webkit-transform: translate(-10%, -17%);
-          transform: translate(-10%, -17%);
+  transform: translate(-10%, -17%);
 }
 section#ability img.magic {
   width: 200%;
-  -webkit-transform: translate(-40%, -15%);
-          transform: translate(-40%, -15%);
+  transform: translate(-40%, -15%);
 }
 
 section#background {
@@ -175,16 +159,14 @@ section#skill .row .col-md-6.Magitech {
   height: 300px;
   background-position: -50px;
   overflow: hidden;
-  -webkit-transform: translate(0%, 15%);
-          transform: translate(0%, 15%);
+  transform: translate(0%, 15%);
 }
 section#skill .row .col-md-6.shooter {
   background-image: url(https://vovo2000.com/images/53826.jpg);
   background-size: 100% 150%;
   height: 300px;
   background-position: 0px -10px;
-  -webkit-transform: translate(0%, 15%);
-          transform: translate(0%, 15%);
+  transform: translate(0%, 15%);
 }
 section#skill .row .col-md-6.ranger {
   background-image: url(https://pbs.twimg.com/media/D9bf6c9VUAAPMzP.jpg);
@@ -259,8 +241,7 @@ section#armor .col-md-3 img {
   left: 35%;
   top: -15%;
   position: relative;
-  -webkit-transform: translate(-40%, -15%);
-          transform: translate(-40%, -15%);
+  transform: translate(-40%, -15%);
 }
 section#armor .col-md-9 .garden, section#armor .col-md-9 .soft {
   font-size: 30px;
@@ -341,8 +322,7 @@ section#item .imgbox img {
   height: 200px;
   position: relative;
   left: 50%;
-  -webkit-transform: translate(-50%);
-          transform: translate(-50%);
+  transform: translate(-50%);
 }
 
 footer.jumbotron {
@@ -358,8 +338,7 @@ footer.jumbotron .background input {
   left: 50%;
   top: 50%;
   font-size: 30px;
-  -webkit-transform: translate(-50%, -60%);
-          transform: translate(-50%, -60%);
+  transform: translate(-50%, -60%);
   background-color: rgba(255, 255, 255, 0.8);
   mix-blend-mode: screen;
   z-index: 10;
