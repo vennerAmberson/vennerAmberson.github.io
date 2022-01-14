@@ -11,3 +11,13 @@ $(window).scroll(function(evt){
 var s = skrollr.init();
 
 document.body.id = "skrollr-body"
+
+var vm = new Vue({
+  el: "#app",
+  methods: {
+    test: function(){
+      ga('send','event','夢魘','點選','點選夢魘二字')
+      
+    }
+
+}})
